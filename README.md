@@ -6,7 +6,7 @@ A Microsoft SQL Server for Linux instance configured for Moodle development. Bas
 # Example usage
 
 ```bash
-docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Password' -p 1433:1433 -d moodlehq/moodle-db-mssql
+docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=yourStrong(!)Password' -p 1433:1433 -d moodlehq/moodle-db-mssql
 ```
 
 # Features:
@@ -17,7 +17,7 @@ docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Password' -p 1433:143
 
 Requires the following environment flags:
 * ACCEPT_EULA=Y
-* SA_PASSWORD=<your_strong_password>
+* MSSQL_SA_PASSWORD=<your_strong_password>
 
 # See also
 This container is part of a set of containers for Moodle development, see also:

@@ -3,7 +3,7 @@
 set -e
 
 i=0
-until /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P "$SA_PASSWORD" -d master -l 1 -Q "SELECT 1" > /dev/null 2>&1
+until /opt/mssql-tools18/bin/sqlcmd -No -S localhost -U sa -P "$MSSQL_SA_PASSWORD" -d master -l 1 -Q "SELECT 1" > /dev/null 2>&1
 do
     echo "[moodle-db-mssql] Waiting for SQL to accept connections"
     sleep 1

@@ -1,5 +1,4 @@
-FROM mcr.microsoft.com/mssql/server:2019-CU22-ubuntu-20.04
-
+FROM mcr.microsoft.com/mssql/server:2022-latest
 
 # Starting with SQL*Server 2017-CU6, by default, flushing became
 # more aggresive, in order to guarantee consistency under power
